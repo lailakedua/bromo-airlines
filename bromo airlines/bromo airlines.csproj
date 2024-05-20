@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3478D9A2-C559-4B1C-8F32-7E5C3EAF4A8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>bromo_airlines</RootNamespace>
+    <AssemblyName>bromo airlines</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainFormValid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainFormValid.Designer.cs">
+      <DependentUpon>AdminMainFormValid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeliTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeliTiket.Designer.cs">
+      <DependentUpon>BeliTiket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMainForm.Designer.cs">
+      <DependentUpon>CustomMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarAkunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaftarAkunForm.Designer.cs">
+      <DependentUpon>DaftarAkunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBandara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterBandara.Designer.cs">
+      <DependentUpon>MasterBandara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterJadwalPenerbangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterJadwalPenerbangan.Designer.cs">
+      <DependentUpon>MasterJadwalPenerbangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKodePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterKodePromo.Designer.cs">
+      <DependentUpon>MasterKodePromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaskapai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaskapai.Designer.cs">
+      <DependentUpon>MasterMaskapai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaskapaiValid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaskapaiValid.Designer.cs">
+      <DependentUpon>MasterMaskapaiValid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiketSaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiketSaya.Designer.cs">
+      <DependentUpon>TiketSaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahStatusPenerbangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahStatusPenerbangan.Designer.cs">
+      <DependentUpon>UbahStatusPenerbangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainFormValid.resx">
+      <DependentUpon>AdminMainFormValid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeliTiket.resx">
+      <DependentUpon>BeliTiket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomMainForm.resx">
+      <DependentUpon>CustomMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaftarAkunForm.resx">
+      <DependentUpon>DaftarAkunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterBandara.resx">
+      <DependentUpon>MasterBandara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterJadwalPenerbangan.resx">
+      <DependentUpon>MasterJadwalPenerbangan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKodePromo.resx">
+      <DependentUpon>MasterKodePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaskapai.resx">
+      <DependentUpon>MasterMaskapai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaskapaiValid.resx">
+      <DependentUpon>MasterMaskapaiValid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TiketSaya.resx">
+      <DependentUpon>TiketSaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahStatusPenerbangan.resx">
+      <DependentUpon>UbahStatusPenerbangan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-shopping 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Garuda-Indonesia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Garuda-Indonesia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Garuda-Indonesia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-mount-bromo-derawan-islands-lombok-package-tour-belitung-hotel-text-logo-computer-wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircraft-airplane-airline-logo-label-journey-air-travel-airliner-symbol-vector-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sm_5ad5dd97e408c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sm_5ad5dd97e408c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain-logo-icon-element-design-template-vector-23390464.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-01-30 at 09.35.51.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-01-30 at 09.47.04.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-takeoff-icon--icon-search-engine-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Rect - Without Tagline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Rect - Without Tagline1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Small1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-tag-alt-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-unselected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-01-31 at 13.20.48.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-unselected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-02-19 at 14.46.52.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-unselected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Alt - Without Padding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out-alt-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-take-off-selected-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane-land-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-selected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-left-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-solid-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airplane-ticket3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-regular-723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-unselected-721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-five-regular-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-regular-72.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
